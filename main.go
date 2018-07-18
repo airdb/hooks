@@ -7,7 +7,7 @@ import (
 )
 
 func Handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
-	// fmt.Println("Received body: ", request.Body)
+	fmt.Println("Received body: ", request.Body)
 
 	msg := `{"token":"416c9006ca431f503160b7e7","status":0, "path":` + request.Path + `}`
 	return events.APIGatewayProxyResponse{
